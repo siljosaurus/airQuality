@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7FF3CA22039A170054BBFD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3C922039A170054BBFD /* Location.swift */; };
+		3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3CB22039A2C0054BBFD /* Network.swift */; };
 		FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DC220393CF00A8A777 /* AppDelegate.swift */; };
 		FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DE220393CF00A8A777 /* ViewController.swift */; };
 		FBFF40E2220393CF00A8A777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E0220393CF00A8A777 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A7FF3C922039A170054BBFD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3A7FF3CB22039A2C0054BBFD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FBFF40D9220393CF00A8A777 /* airQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFF40DC220393CF00A8A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFF40DE220393CF00A8A777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7FF3CD22039A320054BBFD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A7FF3C922039A170054BBFD /* Location.swift */,
+				3A7FF3CB22039A2C0054BBFD /* Network.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		FBFF40D0220393CF00A8A777 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +67,7 @@
 		FBFF40DB220393CF00A8A777 /* airQuality */ = {
 			isa = PBXGroup;
 			children = (
+				3A7FF3CD22039A320054BBFD /* Service */,
 				FBFF40DC220393CF00A8A777 /* AppDelegate.swift */,
 				FBFF40DE220393CF00A8A777 /* ViewController.swift */,
 				FBFF40E0220393CF00A8A777 /* Main.storyboard */,
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */,
+				3A7FF3CA22039A170054BBFD /* Location.swift in Sources */,
+				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
 				FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XYGL7V6HA;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
 				INFOPLIST_FILE = airQuality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XYGL7V6HA;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
 				INFOPLIST_FILE = airQuality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
