@@ -19,6 +19,14 @@ class ViewController: UIViewController {
             guard success else { return }
             let location = locationService.getCoordinates()
             print("Lat: \(location.0 ?? 0), Long: \(location.1 ?? 0)")
+            
+            Network.shared.getDataFor(latitude: location.0 ?? 0, longitude: location.1 ?? 0, km: 5, handler: { (measures) in
+                print("We got \(measures?.count ?? -1) results")
+                measures?.forEach({ (measure) in
+                    print("\(measure.component ?? ""): ", measure.value ?? 0, " \(measure.unit ?? "")")
+                })
+            })
+            
         }
     }
 
