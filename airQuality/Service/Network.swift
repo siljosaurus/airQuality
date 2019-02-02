@@ -10,8 +10,8 @@ import Foundation
 
 
 class Network {
+    // Singelton
     static let shared = Network()
-    
 }
 
 

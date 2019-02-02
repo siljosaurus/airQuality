@@ -14,7 +14,7 @@ class Location: NSObject {
     
     fileprivate let manager = CLLocationManager()
 
-    // Returns (Latitude, Longitude)
+    /// Returns (Latitude, Longitude)
     func getCoordinates() -> (Double?, Double?) {
         let status = CLLocationManager.authorizationStatus()
         if status == .authorizedWhenInUse || status == .authorizedAlways {
