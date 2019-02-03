@@ -9,32 +9,55 @@
 /* Begin PBXBuildFile section */
 		3A7FF3CA22039A170054BBFD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3C922039A170054BBFD /* Location.swift */; };
 		3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3CB22039A2C0054BBFD /* Network.swift */; };
-		3AF8D4AE22046BB50095CD1D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D4AD22046BB50095CD1D /* City.swift */; };
+		3A94CF1C220714FD004C3903 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF1B220714FD004C3903 /* City.swift */; };
+		3A94CF2422071DD6004C3903 /* city.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF2322071DD6004C3903 /* city.swift */; };
+		3A94CF2C22072891004C3903 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF2B22072891004C3903 /* TabController.swift */; };
+		3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D4AD22046BB50095CD1D /* Measure.swift */; };
 		FB71DCCB220594220090E0F3 /* CitiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCA220594220090E0F3 /* CitiesTableView.swift */; };
 		FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCD22059A170090E0F3 /* String+Color.swift */; };
 		FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DC220393CF00A8A777 /* AppDelegate.swift */; };
 		FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DE220393CF00A8A777 /* ViewController.swift */; };
-		FBFF40E2220393CF00A8A777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E0220393CF00A8A777 /* Main.storyboard */; };
 		FBFF40E4220393D100A8A777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E3220393D100A8A777 /* Assets.xcassets */; };
 		FBFF40E7220393D100A8A777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3A94CF2622071DD6004C3903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFF40D1220393CF00A8A777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFF40D8220393CF00A8A777;
+			remoteInfo = airQuality;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3A7FF3C922039A170054BBFD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3A7FF3CB22039A2C0054BBFD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		3AF8D4AD22046BB50095CD1D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		3A94CF1B220714FD004C3903 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		3A94CF2122071DD6004C3903 /* airQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A94CF2322071DD6004C3903 /* city.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = city.swift; sourceTree = "<group>"; };
+		3A94CF2522071DD6004C3903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A94CF2B22072891004C3903 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		3AF8D4AD22046BB50095CD1D /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		FB71DCCA220594220090E0F3 /* CitiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableView.swift; sourceTree = "<group>"; };
 		FB71DCCD22059A170090E0F3 /* String+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Color.swift"; sourceTree = "<group>"; };
 		FBFF40D9220393CF00A8A777 /* airQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFF40DC220393CF00A8A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFF40DE220393CF00A8A777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBFF40E1220393CF00A8A777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBFF40E3220393D100A8A777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFF40E6220393D100A8A777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFF40E8220393D100A8A777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A94CF1E22071DD6004C3903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBFF40D6220393CF00A8A777 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +77,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		3A94CF2222071DD6004C3903 /* airQualityTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A94CF2322071DD6004C3903 /* city.swift */,
+				3A94CF2522071DD6004C3903 /* Info.plist */,
+			);
+			path = airQualityTests;
+			sourceTree = "<group>";
+		};
 		3AF8D4AC22046B9E0095CD1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3AF8D4AD22046BB50095CD1D /* City.swift */,
+				3AF8D4AD22046BB50095CD1D /* Measure.swift */,
+				3A94CF1B220714FD004C3903 /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFF40DB220393CF00A8A777 /* airQuality */,
+				3A94CF2222071DD6004C3903 /* airQualityTests */,
 				FBFF40DA220393CF00A8A777 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFF40D9220393CF00A8A777 /* airQuality.app */,
+				3A94CF2122071DD6004C3903 /* airQualityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +130,7 @@
 				FBFF40DC220393CF00A8A777 /* AppDelegate.swift */,
 				FBFF40DE220393CF00A8A777 /* ViewController.swift */,
 				FB71DCCA220594220090E0F3 /* CitiesTableView.swift */,
-				FBFF40E0220393CF00A8A777 /* Main.storyboard */,
+				3A94CF2B22072891004C3903 /* TabController.swift */,
 				FBFF40E3220393D100A8A777 /* Assets.xcassets */,
 				FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */,
 				FBFF40E8220393D100A8A777 /* Info.plist */,
@@ -106,6 +141,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A94CF2022071DD6004C3903 /* airQualityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A94CF2822071DD6004C3903 /* Build configuration list for PBXNativeTarget "airQualityTests" */;
+			buildPhases = (
+				3A94CF1D22071DD6004C3903 /* Sources */,
+				3A94CF1E22071DD6004C3903 /* Frameworks */,
+				3A94CF1F22071DD6004C3903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A94CF2722071DD6004C3903 /* PBXTargetDependency */,
+			);
+			name = airQualityTests;
+			productName = airQualityTests;
+			productReference = 3A94CF2122071DD6004C3903 /* airQualityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FBFF40D8220393CF00A8A777 /* airQuality */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBFF40EB220393D100A8A777 /* Build configuration list for PBXNativeTarget "airQuality" */;
@@ -133,6 +186,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Silje Marie Flaaten";
 				TargetAttributes = {
+					3A94CF2022071DD6004C3903 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FBFF40D8220393CF00A8A777;
+					};
 					FBFF40D8220393CF00A8A777 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -152,49 +209,66 @@
 			projectRoot = "";
 			targets = (
 				FBFF40D8220393CF00A8A777 /* airQuality */,
+				3A94CF2022071DD6004C3903 /* airQualityTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A94CF1F22071DD6004C3903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBFF40D7220393CF00A8A777 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FBFF40E7220393D100A8A777 /* LaunchScreen.storyboard in Resources */,
 				FBFF40E4220393D100A8A777 /* Assets.xcassets in Resources */,
-				FBFF40E2220393CF00A8A777 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A94CF1D22071DD6004C3903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A94CF2422071DD6004C3903 /* city.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBFF40D5220393CF00A8A777 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB71DCCB220594220090E0F3 /* CitiesTableView.swift in Sources */,
 				FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */,
-				3AF8D4AE22046BB50095CD1D /* City.swift in Sources */,
+				3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */,
 				3A7FF3CA22039A170054BBFD /* Location.swift in Sources */,
 				FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */,
 				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
+				3A94CF1C220714FD004C3903 /* City.swift in Sources */,
+				3A94CF2C22072891004C3903 /* TabController.swift in Sources */,
 				FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		FBFF40E0220393CF00A8A777 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBFF40E1220393CF00A8A777 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		3A94CF2722071DD6004C3903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFF40D8220393CF00A8A777 /* airQuality */;
+			targetProxy = 3A94CF2622071DD6004C3903 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -206,6 +280,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3A94CF2922071DD6004C3903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
+				INFOPLIST_FILE = airQualityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.adrianf.airQualityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/airQuality.app/airQuality";
+			};
+			name = Debug;
+		};
+		3A94CF2A22071DD6004C3903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
+				INFOPLIST_FILE = airQualityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.adrianf.airQualityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/airQuality.app/airQuality";
+			};
+			name = Release;
+		};
 		FBFF40E9220393D100A8A777 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XYGL7V6HA;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
 				INFOPLIST_FILE = airQuality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XYGL7V6HA;
+				DEVELOPMENT_TEAM = F3374ZPSHE;
 				INFOPLIST_FILE = airQuality/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,6 +475,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A94CF2822071DD6004C3903 /* Build configuration list for PBXNativeTarget "airQualityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A94CF2922071DD6004C3903 /* Debug */,
+				3A94CF2A22071DD6004C3903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBFF40D4220393CF00A8A777 /* Build configuration list for PBXProject "airQuality" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -10,7 +10,7 @@ import UIKit
 
 class CitiesTableView: UITableViewController {
     
-    var cities: [City]? {
+    var cities: [Measure]? {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -30,7 +30,6 @@ class CitiesTableView: UITableViewController {
         tableView.tableFooterView = UIView()
         refresher.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         tableView.refreshControl = refresher
-        
     }
     
     @objc fileprivate func fetchData() {

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        view.backgroundColor = .white
         let locationService = Location()
         locationService.askPermission { (success) in
             guard success else { return }

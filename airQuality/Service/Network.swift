@@ -17,7 +17,7 @@ class Network {
 
 extension Network {
     
-    func getDataFor(latitude: Double, longitude: Double, km: Int, handler: @escaping ([City]?) -> ()) {
+    func getDataFor(latitude: Double, longitude: Double, km: Int, handler: @escaping ([Measure]?) -> ()) {
         guard let url = URL(string: "http://api.nilu.no/aq/utd/\(latitude)/\(longitude)/\(km)") else {
             handler(nil)
             print("Failed to make URL from input")
@@ -36,7 +36,7 @@ extension Network {
             }
             
             do {
-                let decodedData = try JSONDecoder().decode([City].self, from: data)
+                let decodedData = try JSONDecoder().decode([Measure].self, from: data)
                 handler(decodedData)
             } catch let err {
                 print("Failed to decode data: ", err)
