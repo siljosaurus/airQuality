@@ -41,7 +41,6 @@ struct Measure: Decodable {
     func calculateHealthRisk() -> HealthRisk {
         guard let value = value else { return .low }
         var currentCase: HealthRisk = .low
-        
         switch component {
         case "PM10":
             if value < 60 {

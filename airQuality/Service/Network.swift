@@ -18,7 +18,8 @@ class Network {
 extension Network {
     
     func getDataFor(latitude: Double, longitude: Double, km: Int, handler: @escaping ([Measure]?) -> ()) {
-        guard let url = URL(string: "http://api.nilu.no/aq/utd/\(latitude)/\(longitude)/\(km)") else {
+        guard let url = URL(string: "http://api.nilu.no/aq/utd/59.913868/10.752245/20") else {
+        //guard let url = URL(string: "http://api.nilu.no/aq/utd/\(latitude)/\(longitude)/\(km)") else {
             handler(nil)
             print("Failed to make URL from input")
             return
