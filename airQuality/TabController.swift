@@ -13,15 +13,18 @@ class TabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let viewController = ViewController()
-        viewController.tabBarItem.title = "View"
+        let viewController = UINavigationController(rootViewController: DetailsTableController())
+        viewController.tabBarItem.title = "Detaljer"
+        viewController.tabBarItem.image = UIImage(named: "my_location")
         
-        let nearbyController = CitiesTableView()
-        nearbyController.title = "Nearby"
+        let nearbyController = OverviewController()
+        nearbyController.title = "Oversikt"
+        
+        tabBar.tintColor = .kindaBlack
         
         viewControllers = [
-            viewController,
-            nearbyController
+            nearbyController,
+            viewController
         ]
         
     }

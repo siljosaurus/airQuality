@@ -8,72 +8,55 @@
 
 import UIKit
 
-class CitiesTableView: UITableViewController {
+class OverviewController: UIViewController {
     
-    var cities: [Measure]? {
+    var city: City? {
         didSet {
             DispatchQueue.main.async {
-                self.tableView.reloadData()
-                self.refresher.endRefreshing()
+                self.setupUI()
             }
         }
     }
-    let refresher = UIRefreshControl()
+
+    let locationTitle: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 24)
+        
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellid")
-        title = "Nearby"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        view.backgroundColor = .white
+        setupLayout()
+
         fetchData()
-        
-        tableView.tableFooterView = UIView()
-        refresher.addTarget(self, action: #selector(fetchData), for: .valueChanged)
-        tableView.refreshControl = refresher
+    }
+    
+    fileprivate func setupLayout() {
+        view.addSubview(locationTitle)
+        [
+            locationTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 14),
+            locationTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -14),
+            locationTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            ].forEach { $0.isActive = true }
+    }
+    
+    fileprivate func setupUI() {
+        locationTitle.text = "hello"
     }
     
     @objc fileprivate func fetchData() {
-        refresher.beginRefreshing()
         let locationService = Location()
         locationService.askPermission { (success) in
             guard success else { return }
             let location = locationService.getCoordinates()
             Network.shared.getDataFor(latitude: location.0 ?? 0, longitude: location.1 ?? 0, km: 2, handler: { (measures) in
-                self.cities = measures
+                guard let measures = measures else { return }
+                self.city = City(measures: measures)
             })
         }
-    }
-    
-}
-
-extension CitiesTableView {
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath)
-        let city = cities?[indexPath.row]
-        //cell.textLabel?.text = "\(city?.station ?? "") \(city?.component ?? "") - \(city?.value ?? -1)\(city?.unit ?? "")"
-        
-        let attributedString = NSMutableAttributedString()
-        
-        attributedString.append(NSAttributedString(string: "\(city?.station ?? "") : ", attributes: [
-            NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16)
-            ]))
-        
-        attributedString.append(NSAttributedString(string: "\(city?.value ?? -1)", attributes: [
-            NSAttributedString.Key.foregroundColor : city?.color?.hexStringToUIColor() as Any
-            ]))
-        
-        cell.textLabel?.attributedText = attributedString
-        
-        return cell
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cities?.count ?? 0
     }
     
 }

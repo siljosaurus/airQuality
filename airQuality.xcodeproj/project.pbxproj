@@ -12,11 +12,13 @@
 		3A94CF1C220714FD004C3903 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF1B220714FD004C3903 /* City.swift */; };
 		3A94CF2422071DD6004C3903 /* city.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF2322071DD6004C3903 /* city.swift */; };
 		3A94CF2C22072891004C3903 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF2B22072891004C3903 /* TabController.swift */; };
+		3AE2FBFF22072FFE00DA95B4 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2FBFE22072FFE00DA95B4 /* MeasureView.swift */; };
+		3AE2FC01220733FE00DA95B4 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2FC00220733FE00DA95B4 /* UIColor+colors.swift */; };
 		3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D4AD22046BB50095CD1D /* Measure.swift */; };
 		FB71DCCB220594220090E0F3 /* CitiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCA220594220090E0F3 /* CitiesTableView.swift */; };
 		FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCD22059A170090E0F3 /* String+Color.swift */; };
 		FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DC220393CF00A8A777 /* AppDelegate.swift */; };
-		FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DE220393CF00A8A777 /* ViewController.swift */; };
+		FBFF40DF220393CF00A8A777 /* DetailsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */; };
 		FBFF40E4220393D100A8A777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E3220393D100A8A777 /* Assets.xcassets */; };
 		FBFF40E7220393D100A8A777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,12 +41,14 @@
 		3A94CF2322071DD6004C3903 /* city.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = city.swift; sourceTree = "<group>"; };
 		3A94CF2522071DD6004C3903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A94CF2B22072891004C3903 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		3AE2FBFE22072FFE00DA95B4 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		3AE2FC00220733FE00DA95B4 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		3AF8D4AD22046BB50095CD1D /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		FB71DCCA220594220090E0F3 /* CitiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableView.swift; sourceTree = "<group>"; };
 		FB71DCCD22059A170090E0F3 /* String+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Color.swift"; sourceTree = "<group>"; };
 		FBFF40D9220393CF00A8A777 /* airQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFF40DC220393CF00A8A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBFF40DE220393CF00A8A777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableController.swift; sourceTree = "<group>"; };
 		FBFF40E3220393D100A8A777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFF40E6220393D100A8A777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFF40E8220393D100A8A777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 			path = airQualityTests;
 			sourceTree = "<group>";
 		};
+		3AE2FC022207483C00DA95B4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */,
+				3AE2FBFE22072FFE00DA95B4 /* MeasureView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		3AF8D4AC22046B9E0095CD1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				FB71DCCD22059A170090E0F3 /* String+Color.swift */,
+				3AE2FC00220733FE00DA95B4 /* UIColor+colors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -127,10 +141,10 @@
 				FB71DCCC22059A020090E0F3 /* Extension */,
 				3AF8D4AC22046B9E0095CD1D /* Model */,
 				3A7FF3CD22039A320054BBFD /* Service */,
-				FBFF40DC220393CF00A8A777 /* AppDelegate.swift */,
-				FBFF40DE220393CF00A8A777 /* ViewController.swift */,
+				3AE2FC022207483C00DA95B4 /* Details */,
 				FB71DCCA220594220090E0F3 /* CitiesTableView.swift */,
 				3A94CF2B22072891004C3903 /* TabController.swift */,
+				FBFF40DC220393CF00A8A777 /* AppDelegate.swift */,
 				FBFF40E3220393D100A8A777 /* Assets.xcassets */,
 				FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */,
 				FBFF40E8220393D100A8A777 /* Info.plist */,
@@ -247,12 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB71DCCB220594220090E0F3 /* CitiesTableView.swift in Sources */,
-				FBFF40DF220393CF00A8A777 /* ViewController.swift in Sources */,
+				FBFF40DF220393CF00A8A777 /* DetailsTableController.swift in Sources */,
 				3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */,
+				3AE2FBFF22072FFE00DA95B4 /* MeasureView.swift in Sources */,
 				3A7FF3CA22039A170054BBFD /* Location.swift in Sources */,
 				FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */,
 				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
 				3A94CF1C220714FD004C3903 /* City.swift in Sources */,
+				3AE2FC01220733FE00DA95B4 /* UIColor+colors.swift in Sources */,
 				3A94CF2C22072891004C3903 /* TabController.swift in Sources */,
 				FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */,
 			);
