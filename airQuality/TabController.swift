@@ -20,11 +20,16 @@ class TabController: UITabBarController {
         let nearbyController = OverviewController()
         nearbyController.title = "Oversikt"
         
+        let mapController = MapController()
+        mapController.title = "Map"
+        mapController.tabBarItem.image = UIImage(named: "map")
+        
         tabBar.tintColor = .kindaBlack
         
         viewControllers = [
+            mapController,
+            viewController,
             nearbyController,
-            viewController
         ]
         
     }

@@ -49,7 +49,6 @@ class DetailsTableController: UITableViewController {
     }
     
     @objc fileprivate func fetchData() {
-
         let locationService = Location()
         locationService.askPermission { (success) in
             guard success else { return }

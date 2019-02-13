@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1933AF22135719000070AE /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1933AE22135719000070AE /* MapController.swift */; };
 		3A7FF3CA22039A170054BBFD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3C922039A170054BBFD /* Location.swift */; };
 		3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3CB22039A2C0054BBFD /* Network.swift */; };
 		3A94CF1C220714FD004C3903 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF1B220714FD004C3903 /* City.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A1933AE22135719000070AE /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		3A7FF3C922039A170054BBFD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3A7FF3CB22039A2C0054BBFD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		3A94CF1B220714FD004C3903 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				FBFF40E3220393D100A8A777 /* Assets.xcassets */,
 				FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */,
 				FBFF40E8220393D100A8A777 /* Info.plist */,
+				3A1933AE22135719000070AE /* MapController.swift */,
 			);
 			path = airQuality;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				FBFF40DF220393CF00A8A777 /* DetailsTableController.swift in Sources */,
 				3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */,
 				3AE2FBFF22072FFE00DA95B4 /* MeasureView.swift in Sources */,
+				3A1933AF22135719000070AE /* MapController.swift in Sources */,
 				3A7FF3CA22039A170054BBFD /* Location.swift in Sources */,
 				FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */,
 				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
