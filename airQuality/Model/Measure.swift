@@ -6,10 +6,10 @@
 //  Copyright © 2019 Silje Marie Flaaten. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum HealthRisk: Int {
-    case low = 1, moderate, high, veryHigh, unknown
+    case unknown = 1, low, moderate, high, veryHigh
 }
 
 struct Measure: Decodable {
@@ -94,6 +94,23 @@ struct Measure: Decodable {
         }
         
         return currentCase
+    }
+    
+    func getColorIndex() -> UIColor {
+        let hr = self.calculateHealthRisk()
+        
+        switch hr {
+        case .low:
+            return .appleGreen
+        case .moderate:
+            return .appleYellow
+        case .high:
+            return .appleRed
+        case .veryHigh:
+            return .applePurple
+        case .unknown:
+            return .graySuit
+        }
     }
  
     func getStation() -> String {

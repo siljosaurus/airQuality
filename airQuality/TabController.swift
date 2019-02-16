@@ -21,7 +21,7 @@ class TabController: UITabBarController {
         nearbyController.title = "Oversikt"
         
         let mapController = MapController()
-        mapController.title = "Map"
+        mapController.title = "Kart"
         mapController.tabBarItem.image = UIImage(named: "map")
         
         tabBar.tintColor = .kindaBlack

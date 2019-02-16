@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A1933AF22135719000070AE /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1933AE22135719000070AE /* MapController.swift */; };
+		3A71B6E0221869CE001AF011 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71B6DF221869CE001AF011 /* Station.swift */; };
 		3A7FF3CA22039A170054BBFD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3C922039A170054BBFD /* Location.swift */; };
 		3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF3CB22039A2C0054BBFD /* Network.swift */; };
 		3A94CF1C220714FD004C3903 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94CF1B220714FD004C3903 /* City.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3A1933AE22135719000070AE /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		3A71B6DF221869CE001AF011 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		3A7FF3C922039A170054BBFD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3A7FF3CB22039A2C0054BBFD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		3A94CF1B220714FD004C3903 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				3AF8D4AD22046BB50095CD1D /* Measure.swift */,
 				3A94CF1B220714FD004C3903 /* City.swift */,
+				3A71B6DF221869CE001AF011 /* Station.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,12 +148,12 @@
 				3A7FF3CD22039A320054BBFD /* Service */,
 				3AE2FC022207483C00DA95B4 /* Details */,
 				FB71DCCA220594220090E0F3 /* CitiesTableView.swift */,
+				3A1933AE22135719000070AE /* MapController.swift */,
 				3A94CF2B22072891004C3903 /* TabController.swift */,
 				FBFF40DC220393CF00A8A777 /* AppDelegate.swift */,
 				FBFF40E3220393D100A8A777 /* Assets.xcassets */,
 				FBFF40E5220393D100A8A777 /* LaunchScreen.storyboard */,
 				FBFF40E8220393D100A8A777 /* Info.plist */,
-				3A1933AE22135719000070AE /* MapController.swift */,
 			);
 			path = airQuality;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
 				3A94CF1C220714FD004C3903 /* City.swift in Sources */,
 				3AE2FC01220733FE00DA95B4 /* UIColor+colors.swift in Sources */,
+				3A71B6E0221869CE001AF011 /* Station.swift in Sources */,
 				3A94CF2C22072891004C3903 /* TabController.swift in Sources */,
 				FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */,
 			);
