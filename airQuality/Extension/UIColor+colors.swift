@@ -20,5 +20,7 @@ extension UIColor {
     
     static let ibmBlue = UIColor(red:0.06, green:0.31, blue:0.84, alpha:1.00)
     static let ibmPink = UIColor(red:0.86, green:0.16, blue:0.18, alpha:1.00)
+    
+    static let siljePurple = UIColor(red:0.49, green:0.36, blue:1.00, alpha:1.0)
 }
 
