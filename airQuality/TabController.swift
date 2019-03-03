@@ -27,9 +27,8 @@ class TabController: UITabBarController {
         tabBar.tintColor = .kindaBlack
         
         viewControllers = [
-            mapController,
             viewController,
-            nearbyController,
+            mapController,
         ]
         
     }

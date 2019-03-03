@@ -14,9 +14,7 @@ class MapController: UIViewController, MKMapViewDelegate {
     var stations: [Station]? {
         didSet {
             stations?.forEach({ (station) in
-                if let lat = station.latitude, let long = station.longitude {
-                    self.mapView.addAnnotation(MeasureAnnotation(station: station))
-                }
+                self.mapView.addAnnotation(MeasureAnnotation(station: station))
             })
         }
     }
@@ -49,10 +47,8 @@ class MapController: UIViewController, MKMapViewDelegate {
             guard success else { return }
             let location = locationService.getCoordinates()
             let coordinate = CLLocationCoordinate2D(latitude: location.0 ?? 0, longitude: location.1 ?? 0)
-            
-            let mapCamera = MKMapCamera(lookingAtCenter: coordinate, fromDistance: 5000, pitch: 0, heading: 0)
+            let mapCamera = MKMapCamera(lookingAtCenter: coordinate, fromDistance: 10000, pitch: 0, heading: 0)
             self.mapView.setCamera(mapCamera, animated: true)
-            
         }
         
         Network.shared.getMapData { (measures) in
@@ -71,7 +67,6 @@ class MapController: UIViewController, MKMapViewDelegate {
             })
             self.stations = result
         }
-        
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -97,8 +92,6 @@ class MapController: UIViewController, MKMapViewDelegate {
                 view.pinTintColor = .graySuit
             }
         }
-        
-        
         view.canShowCallout = true
         return view
     }

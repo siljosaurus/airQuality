@@ -114,6 +114,7 @@ struct Measure: Decodable {
     }
  
     func getStation() -> String {
+        return station ?? ""
         var text = ""
         switch station {
         case "Kirkeveien":

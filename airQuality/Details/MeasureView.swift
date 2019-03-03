@@ -94,10 +94,14 @@ class MeasureView: UITableViewCell {
             break
         case .unknown:
             colorIndex.backgroundColor = .graySuit
-            description = "Ingen data.. "
+            description = "Ingen data\n"
         }
         
-        descriptionLabel.text = description + " -  \(Int(measure.value ?? -1 )) \(measure.unit ?? "")\n"
+        if healthRisk != .unknown {
+            description += " -  \(Int(measure.value ?? -1 )) \(measure.unit ?? "")\n"
+        }
+        
+        descriptionLabel.text = description// + " -  \(Int(measure.value ?? -1 )) \(measure.unit ?? "")\n"
         
         var text = ""
         
@@ -117,6 +121,7 @@ class MeasureView: UITableViewCell {
             break
         }
         
+        
         let attrText = NSMutableAttributedString()
         attrText.append(NSAttributedString(string: text, attributes: [
             NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18),
@@ -126,7 +131,6 @@ class MeasureView: UITableViewCell {
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18),
             NSAttributedString.Key.foregroundColor : UIColor.graySuit
             ]))
-        
         componentLabel.attributedText = attrText
     }
 

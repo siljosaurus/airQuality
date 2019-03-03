@@ -43,5 +43,4 @@ struct Station {
         })
         return HealthRisk(rawValue: worst)
     }
-    
 }
