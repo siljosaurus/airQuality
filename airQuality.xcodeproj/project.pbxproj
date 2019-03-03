@@ -19,6 +19,7 @@
 		3AF8D4AE22046BB50095CD1D /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D4AD22046BB50095CD1D /* Measure.swift */; };
 		FB71DCCB220594220090E0F3 /* CitiesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCA220594220090E0F3 /* CitiesTableView.swift */; };
 		FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71DCCD22059A170090E0F3 /* String+Color.swift */; };
+		FBA83D77222C053B003CE0A9 /* Helserisiko.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA83D76222C053B003CE0A9 /* Helserisiko.swift */; };
 		FBFF40DD220393CF00A8A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DC220393CF00A8A777 /* AppDelegate.swift */; };
 		FBFF40DF220393CF00A8A777 /* DetailsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */; };
 		FBFF40E4220393D100A8A777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFF40E3220393D100A8A777 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		3AF8D4AD22046BB50095CD1D /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		FB71DCCA220594220090E0F3 /* CitiesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableView.swift; sourceTree = "<group>"; };
 		FB71DCCD22059A170090E0F3 /* String+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Color.swift"; sourceTree = "<group>"; };
+		FBA83D76222C053B003CE0A9 /* Helserisiko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helserisiko.swift; path = airQuality/Helserisiko.swift; sourceTree = SOURCE_ROOT; };
 		FBFF40D9220393CF00A8A777 /* airQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFF40DC220393CF00A8A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				FBFF40DE220393CF00A8A777 /* DetailsTableController.swift */,
 				3AE2FBFE22072FFE00DA95B4 /* MeasureView.swift */,
+				FBA83D76222C053B003CE0A9 /* Helserisiko.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				FB71DCCE22059A170090E0F3 /* String+Color.swift in Sources */,
 				3A7FF3CC22039A2C0054BBFD /* Network.swift in Sources */,
 				3A94CF1C220714FD004C3903 /* City.swift in Sources */,
+				FBA83D77222C053B003CE0A9 /* Helserisiko.swift in Sources */,
 				3AE2FC01220733FE00DA95B4 /* UIColor+colors.swift in Sources */,
 				3A71B6E0221869CE001AF011 /* Station.swift in Sources */,
 				3A94CF2C22072891004C3903 /* TabController.swift in Sources */,

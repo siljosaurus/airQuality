@@ -26,9 +26,15 @@ class TabController: UITabBarController {
         
         tabBar.tintColor = .kindaBlack
         
+        let helse = Helserisiko()
+        helse.title = "Helse"
+        let helseNavController = UINavigationController(rootViewController: helse)
+        helseNavController.tabBarItem.image = UIImage(named: "helse")
+        
         viewControllers = [
             viewController,
             mapController,
+            helseNavController,
         ]
         
     }
