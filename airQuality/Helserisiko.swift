@@ -13,7 +13,7 @@ class Helserisiko: UIViewController {
     let helloLabel:UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Takk til luftkvalitet.info og nilu.no som samler inn og gjør tilgjengelig målinger om luftkvalitet i hele Norge."
+        label.text = "Takk til luftkvalitet.info og nilu.no som samler inn og gjør tilgjengelig målinger om luftkvalitet og dens helserisiko i hele Norge."
         label.textAlignment = .left
         label.numberOfLines = 0
         return label

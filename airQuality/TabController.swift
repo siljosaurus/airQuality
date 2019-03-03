@@ -29,6 +29,7 @@ class TabController: UITabBarController {
         let helse = Helserisiko()
         helse.title = "Helse"
         let helseNavController = UINavigationController(rootViewController: helse)
+        helseNavController.tabBarItem.image = UIImage(named: "helse")
         
         viewControllers = [
             viewController,
